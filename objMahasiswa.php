@@ -98,10 +98,9 @@
 
 <div style="padding-top: 20px; padding-bottom: 193px;">
     <h2 align="center">Daftar Nilai Ujian Mahasiswa</h2>
-    <table border="1" width="50%" style="text-align: center; margin: auto;">
+    <table border="1" width="50%" style="margin: auto;">
         <thead>
             <tr bgcolor="cyan">
-                <th>No</th>
                 <th>NIM</th>
                 <th>Nama</th>
                 <th>Kuliah</th>
@@ -114,9 +113,7 @@
         </thead>
         <tbody>
             <?php
-                $no = 1;
                 echo '<tr bgcolor="snow">';
-                    echo '<td>' . $no++ . '. </td>';
                     echo '<td>' . $mhs->nim . '</td>';
                     echo '<td>' . $mhs->nama . '</td>';
                     echo '<td>' . $mhs->kuliah . '</td>';
