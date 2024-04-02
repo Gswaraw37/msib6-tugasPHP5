@@ -28,11 +28,11 @@
         public function grade(){
             if ($this->nilai >= 85) {
                 $this->grade = 'A';
-            } elseif ($this->nilai >= 70) {
+            } elseif ($this->nilai >= 75) {
                 $this->grade = 'B';
-            } elseif ($this->nilai >= 69) {
-                $this->grade = 'C';
             } elseif ($this->nilai >= 60) {
+                $this->grade = 'C';
+            } elseif ($this->nilai >= 40) {
                 $this->grade = 'D';
             } else {
                 $this->grade = 'E';
@@ -55,7 +55,7 @@
                     $this->predikat = 'Kurang';
                     break;
                 default:
-                    $this->predikat = 'Buruk';
+                    $this->predikat = 'Sangat Kurang';
                     break;
             }
             return $this->predikat;
